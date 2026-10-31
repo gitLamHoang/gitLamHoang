@@ -1,27 +1,27 @@
-# A two-minute project tour
+# A short tour of my HARP work
 
-Start with a working interaction, then follow the evidence into the code.
+I contribute navigation, motion control, and development tools to HARP's human interaction team.
 
-## 1. Explore a forecast · 60 seconds
+## 1. Waypoint navigation
 
-Open the [NYC Mobility Intelligence map](https://gitlamhoang.github.io/nyc-mobility-intelligence/). Choose a zone, move through the historical hours, and compare recorded pickups with the forecast and weekly baseline. Look for a place where the model struggles.
+[PR #2: Waypoint routes and runtime safeguards](https://github.com/Humanoid-Athletic-Robotics-Project-HARP/social-interaction/pull/2)
 
-The display contains **12,576 zone-hours: 262 zones × 48 hours**, from April 7–8, 2026 in New York. It is a small historical demonstration, not an estimate of future performance. Its [export record](https://github.com/gitLamHoang/nyc-mobility-intelligence/blob/main/reports/demo_export.json) connects it to saved predictions with content hashes.
+Added configurable waypoint routes and repeated laps to the simulator course runner, with manual takeover, bounded navigation requests, and fault handling.
 
-For the engineering decisions, read the [walk-forward evaluation](https://github.com/gitLamHoang/nyc-mobility-intelligence/blob/main/reports/WALK_FORWARD_REVIEW.md) and [observation-delay study](https://github.com/gitLamHoang/nyc-mobility-intelligence/blob/main/reports/LATENCY_REVIEW.md). The broader evaluation covers February–April; the two-day display is not the full benchmark. The code separates Python modeling, SQL summaries, and the TypeScript interface.
+The contribution also improved sensor freshness checks and the handling of run records. Validation included automated tests and recorded simulator runs.
 
-## 2. Follow a review decision · 30 seconds
+## 2. Waypoint recording and speed control
 
-Open [Document Date Review](https://github.com/gitLamHoang/pharma-ocr-date-rag) and follow its quickstart. Index the synthetic documents, inspect a candidate date with its source context, then record a review decision. Re-indexing an unchanged document preserves its identity; changed content receives a new version.
+[PR #5: Waypoint recording and speed smoothing](https://github.com/Humanoid-Athletic-Robotics-Project-HARP/social-interaction/pull/5)
 
-The useful question is whether a reviewer can trace a decision back to the document—not whether every extracted date looks plausible. The public fixture demonstrates behavior on a small, synthetic set; it does not establish extraction accuracy on a real document population.
+Added an interactive tool that records positions and headings from ROS 2 odometry, supports undo, and saves reusable route files.
 
-## 3. Check who is held out · 30 seconds
+Straight-distance walks now ramp speed requests and slow near the target. Completion, timeout, and fault handling still request an immediate stop.
 
-Open [EEG State Classifier](https://github.com/gitLamHoang/Classfying-brain-wave-state) and follow the grouped evaluation example. Inspect how participant identities separate training from evaluation, including during parameter tuning.
+Local ROS 2 tests cover these changes. Target-image execution, simulator behavior for the latest changes, and physical robot behavior still need validation.
 
-Nearby windows from the same participant can be too similar to support a useful generalization claim. The synthetic demonstration verifies the split and pipeline mechanics; independent participant data would be needed to measure real performance.
+## Explore the team project
 
-## Go deeper
+The [HARP repository](https://github.com/Humanoid-Athletic-Robotics-Project-HARP/social-interaction) documents the full team system, setup, progress, and validation limits.
 
-Each repository includes setup commands, tests, limitations, and source code. These are independent learning prototypes at different stages, with their evidence boundaries stated explicitly. Questions about actual users, operational feeds, and deployment requirements remain part of the work ahead.
+[Back to my profile](README.md)
