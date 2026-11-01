@@ -2,6 +2,8 @@
 
 **Stanford CS · Software Engineer Lead, HARP**
 
+Portfolio: **[Harvey's Hub](https://gitlamhoang.github.io)**
+
 I work on navigation and motion control for humanoid robots with the **Humanoid Athletic Robotics Project (HARP)** at Stanford Student Robotics.
 
 ## Current work
@@ -21,4 +23,4 @@ My contributions focus on:
 
 Validation includes simulation and local ROS 2 tests. The latest recorder and speed changes still need target-image and simulator checks. Physical robot validation is pending.
 
-[HARP repository](https://github.com/Humanoid-Athletic-Robotics-Project-HARP/social-interaction) · [Contribution tour](TOUR.md) · [LinkedIn](https://www.linkedin.com/in/phanhlam)
+[Portfolio](https://gitlamhoang.github.io) · [HARP repository](https://github.com/Humanoid-Athletic-Robotics-Project-HARP/social-interaction) · [Contribution tour](TOUR.md) · [LinkedIn](https://www.linkedin.com/in/phanhlam)
