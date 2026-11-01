@@ -1,4 +1,4 @@
-# Hi, I'm Lam Phan.
+# Hi, I'm Harvey Phan.
 
 **Stanford CS · Software Engineer Lead, HARP**
 
