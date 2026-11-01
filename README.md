@@ -6,7 +6,7 @@ I work on navigation and motion control for humanoid robots with the **Humanoid 
 
 ## Current work
 
-I contribute to HARP's [human interaction team](https://github.com/Humanoid-Athletic-Robotics-Project-HARP/social-interaction), which develops software for the Unitree G1.
+I lead HARP's [Human Perception & Social Interaction Team](https://github.com/Humanoid-Athletic-Robotics-Project-HARP/social-interaction), which develops software for the Unitree G1.
 
 My contributions focus on:
 
